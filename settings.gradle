@@ -1,3 +1,4 @@
-rootProject.name = 'java_course'
+rootProject.name = 'java_course
+include 'homework_3
 include 'homework_2'
 
