@@ -3,6 +3,6 @@ rootProject.name = 'java_course'
 include 'homework_3_extra'
 include 'homework_3'
 include 'homework_2'
-include 'homework_3'
 include 'homework_5_classes_methods'
+include 'homework_4_arrays'
 
