@@ -3,4 +3,5 @@ rootProject.name = 'java_course'
 include 'homework_3_extra'
 include 'homework_3'
 include 'homework_2'
+include 'homework_4_arrays'
 
