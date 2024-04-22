@@ -6,4 +6,5 @@ include 'homework_2'
 include 'homework_5_classes_methods'
 include 'homework_4_arrays'
 include 'homework_7_class_enum_interface'
+include 'homework_6_override_clone'
 
