@@ -7,5 +7,11 @@ include 'homework_5_classes_methods'
 include 'homework_4_arrays'
 include 'homework_7_class_enum_interface'
 include 'homework_6_override_clone'
-include 'homework_8_employee_recursion'
+include 'homework_8_employee_recursion
+include 'homework_9_exception'
+include 'homework_9_exception'
+include 'homework_9_exception'
+include 'homework_9_exception'
+include 'homework_9_exception'
+include 'homework_9_exception'
 
