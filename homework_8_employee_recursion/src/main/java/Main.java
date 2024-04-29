@@ -82,6 +82,10 @@ public class Main {
         System.out.println("TASK_5");
 
         CheckEmployeeService checkEmployeeService = new CheckEmployeeService();
-        checkEmployeeService.checkEmployee(director1, "Oleg Solodko");
+        if (checkEmployeeService.checkEmployee(director1, "Oleg Solodko")) {
+            System.out.println("Employee EXISTS!");
+        } else {
+            System.out.println("Employee DOESN'T exist!");
+        }
     }
 }
