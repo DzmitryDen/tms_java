@@ -1,0 +1,3 @@
+public enum Subject {
+    MATH, PROGRAMMING, HISTORY, PHYSICS, CHEMISTRY
+}
