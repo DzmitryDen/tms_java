@@ -4,7 +4,7 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/homework_9_exception" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/homework_6_override_clone" />
             <option value="$PROJECT_DIR$/homework_7_class_enum_interface" />
             <option value="$PROJECT_DIR$/homework_8_employee_recursion" />
+            <option value="$PROJECT_DIR$/homework_9_exception" />
           </set>
         </option>
       </GradleProjectSettings>
