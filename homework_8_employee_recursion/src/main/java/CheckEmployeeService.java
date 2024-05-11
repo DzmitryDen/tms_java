@@ -6,13 +6,19 @@ public class CheckEmployeeService {
 
         List<Employee> list = director.getEmployeeUnderControl();
 
+        boolean check = false;
+
         for (Employee employee : list) {
             if (employee.getFullName().equals(fullName)) {
-                return true;
+                check = true;
+                return check;
             } else if (employee.getClass() == Director.class) {
-                checkEmployee((Director) employee, fullName);
+              if (checkEmployee((Director) employee, fullName))  {
+                  check = true;
+                  return check;
+              }
             }
         }
-        return false;
+        return check;
     }
 }
