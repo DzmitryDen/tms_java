@@ -79,18 +79,11 @@ public class Main {
 
         // 3. Вывести только уникальные имена пользователей
         System.out.println("Unique names:");
-        List<String> allNames = new ArrayList<>(); // список всех имен
-        List<String> uniqueNames = new ArrayList<>(); // список уникальных имен
+        Set<String> uniqueNames = new HashSet<>(); // список уникальных имен
 
         for (User user : userSet) {
             if (!user.getName().isEmpty() && user.getName() != null) {
-                allNames.add(user.getName());
-            }
-        }
-
-        for (String name : allNames) {
-            if (Collections.frequency(allNames, name) == 1) {
-                uniqueNames.add(name);
+                uniqueNames.add(user.getName());
             }
         }
 

@@ -12,7 +12,7 @@ public class ConvertService {
         Map<String, Boolean> map = new HashMap<>();
 
         for (String string : arr) {
-            if (Collections.frequency(List.of(arr), string) > 1) {
+            if (map.containsKey(string)) {
                 map.put(string, true);
             } else {
                 map.put(string, false);
