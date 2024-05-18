@@ -153,6 +153,14 @@ public class Main {
         }
         map.forEach((k, v) -> System.out.print(k + ": " + v + "; \n"));
 
+        // Решение через Collectors.toMap
+        Map<Integer, String> collect5 = goodsList.stream()
+                .flatMap(goods -> goods.getStores().stream())
+                .collect(Collectors.toSet()).stream()
+                .collect(Collectors.toMap(Store::getNumber, Store::getPhoneNumber));
+        System.out.println(collect5);
+
+
         // 10.Узнать все ли товары указанной категории можно доставить до покупателя (для примера CATEGORY_2)
         boolean b = goodsList.stream()
                 .filter(goods -> goods.getCategory().equals(Category.CATEGORY_2))
