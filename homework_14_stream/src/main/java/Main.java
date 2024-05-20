@@ -2,6 +2,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.IntStream;
 
+import static java.util.stream.Collectors.*;
+
 /**
  * Task
  * Есть стрим из чисел
@@ -16,29 +18,21 @@ public class Main {
 
         int n = 10; // задаем количество подряд идущих чисел
 
-        Map<String, Integer> map = new HashMap<>();
-
-        int countEven = (int) IntStream.iterate(1, v -> v + 1)
+        // Определяем количество четных и нечетных
+        Map<String, Long> collect1 = IntStream.iterate(1, v -> v + 1)
                 .limit(n)
-                .filter(v -> v % 2 == 0)
-                .count(); // количество четных
-        int countOdd = n - countEven; // количество нечетных
+                .boxed()
+                .collect(groupingBy(v -> v % 2 == 0 ? "CountEven" : "CountOdd", counting()));
 
-        int sumCommon = IntStream.iterate(1, v -> v + 1)
+        // Находим сумму четных и нечетных соответственно
+        Map<String, Long> collect2 = IntStream.iterate(1, v -> v + 1)
                 .limit(n)
-                .sum(); // общая сумма n-чисел
+                .boxed()
+                .collect(groupingBy(v -> v % 2 == 0 ? "SumEven" : "SumOdd", summingLong(v -> v)));
 
-        int sumEven = IntStream.iterate(1, v -> v + 1)
-                .limit(n)
-                .filter(v -> v % 2 == 0)
-                .sum(); // сумма четных
-        int sumOdd = sumCommon - sumEven; // сумма нечетных
-
-        map.put("CountEven", countEven);
-        map.put("CountOdd", countOdd);
-        map.put("SumEven", sumEven);
-        map.put("SumOdd", sumOdd);
-
-        map.forEach((k,v) -> System.out.println(k + ":" + v));
+        // Общая коллекция значений
+        Map<String, Long> commonCollect = new HashMap<>(collect1);
+        commonCollect.putAll(collect2);
+        System.out.println(commonCollect);
     }
 }
