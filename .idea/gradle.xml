@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/homework_10_strings" />
             <option value="$PROJECT_DIR$/homework_11_list" />
+            <option value="$PROJECT_DIR$/homework_13_stream" 
             <option value="$PROJECT_DIR$/homework_12_collections" />
             <option value="$PROJECT_DIR$/homework_12_collections/untitled" />
             <option value="$PROJECT_DIR$/homework_2" />
@@ -25,6 +26,5 @@
         </option>
       </GradleProjectSettings>
     </option>
-    <option name="parallelModelFetch" value="true" />
   </component>
 </project>
