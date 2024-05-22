@@ -20,11 +20,11 @@ public class User {
         return (getUserSalary() + profession.getBonus());
     }
 
-    public String getUserInfoWithoutBonus(User user) {
-        return "Profession: " + profession + "; name: " + name + "; salary: " + user.getUserSalary();
+    public String getUserInfoWithoutBonus() {
+        return "Profession: " + profession + "; name: " + name + "; salary: " + getUserSalary();
     }
 
-    public String getUserInfoWithBonus(User user) {
-        return "Profession: " + profession + "; name: " + name + "; salary + bonus: " + user.getUserSalaryWithBonus();
+    public String getUserInfoWithBonus() {
+        return "Profession: " + profession + "; name: " + name + "; salary + bonus: " + getUserSalaryWithBonus();
     }
 }

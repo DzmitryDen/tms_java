@@ -11,7 +11,7 @@ public class Person implements Cloneable {
     private String name;
     private int age;
     private double salary;
-    Cat cat;
+    private Cat cat;
 
     public void setName(String name) {
         this.name = name;

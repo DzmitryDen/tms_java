@@ -27,9 +27,9 @@ public class Main {
         User worker = new User("Popov", Profession.WORKER, 3);
 
         System.out.println("Users with usual salary");
-        System.out.println(director.getUserInfoWithoutBonus(director));
-        System.out.println(hr.getUserInfoWithoutBonus(hr));
-        System.out.println(worker.getUserInfoWithoutBonus(worker) + "\n");
+        System.out.println(director.getUserInfoWithoutBonus());
+        System.out.println(hr.getUserInfoWithoutBonus());
+        System.out.println(worker.getUserInfoWithoutBonus() + "\n");
 
         // users with salary + bonus
         User director_1 = new User("Sidorov", Profession.DIRECTOR, 12);
@@ -37,8 +37,8 @@ public class Main {
         User worker_1 = new User("Karpov", Profession.WORKER, 7);
 
         System.out.println("Users with salary + bonus");
-        System.out.println(director_1.getUserInfoWithBonus(director_1));
-        System.out.println(hr_1.getUserInfoWithBonus(hr_1));
-        System.out.println(worker_1.getUserInfoWithBonus(worker_1) + "\n");
+        System.out.println(director_1.getUserInfoWithBonus());
+        System.out.println(hr_1.getUserInfoWithBonus());
+        System.out.println(worker_1.getUserInfoWithBonus() + "\n");
     }
 }
