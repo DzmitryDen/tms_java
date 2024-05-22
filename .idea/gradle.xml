@@ -4,10 +4,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/homework_9_exception" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/homework_10_strings" />
+            <option value="$PROJECT_DIR$/homework_11_list" />
+            <option value="$PROJECT_DIR$/homework_12_collections" />
+            <option value="$PROJECT_DIR$/homework_12_collections/untitled" />
             <option value="$PROJECT_DIR$/homework_2" />
             <option value="$PROJECT_DIR$/homework_3" />
             <option value="$PROJECT_DIR$/homework_3_extra" />
